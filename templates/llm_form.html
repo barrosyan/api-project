@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Service</title>
+</head>
+<body>
+    <h1>LLM Service</h1>
+    <form method="post" action="{% url 'llm_view' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="pdf_file">Enviar PDF:</label>
+        <input type="file" name="pdf_file" id="pdf_file" required><br><br>
+        <label for="context">Contexto:</label>
+        <input type="text" name="context" id="context" required><br><br>
+        <label for="question">Pergunta:</label>
+        <input type="text" name="question" id="question" required><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
