@@ -2,6 +2,8 @@ FROM python:3.9-slim
 
 WORKDIR /app
 
+COPY ../manage.py /app/manage.py
+
 COPY requirements.txt .
 
 RUN pip install --upgrade pip \
