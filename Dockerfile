@@ -17,5 +17,3 @@ RUN /opt/.venv/bin/pip install --upgrade pip
 RUN /opt/.venv/bin/pip install --upgrade setuptools
 RUN /opt/.venv/bin/pip install wheel
 RUN /opt/.venv/bin/pip install -r requirements.txt
-
-CMD ["/code/entrypoint.sh"]
