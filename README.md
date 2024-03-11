@@ -31,10 +31,9 @@ Make sure you have Docker and Docker Compose installed on your machine before st
 
     This will start the `depth_service` and `llm_service` in separate Docker containers.
 
-4. Access the services at the following URLs:
+4. Access the services at the following URL:
 
-    - `depth_service`: http://localhost:8001
-    - `llm_service`: http://localhost:8002
+    - http://localhost:8001
 
 ## How to Use
 
