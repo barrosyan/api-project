@@ -16,6 +16,6 @@ RUN python3 -m venv /opt/.venv
 RUN /opt/.venv/bin/pip install --upgrade pip
 RUN /opt/.venv/bin/pip install --upgrade setuptools
 RUN /opt/.venv/bin/pip install wheel
-RUN /opt/.venv/bin/pip install -r intelli_predict/requirements.txt
+RUN /opt/.venv/bin/pip install -r requirements.txt
 
 CMD ["/code/entrypoint.sh"]
