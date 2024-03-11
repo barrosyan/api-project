@@ -1,18 +1,12 @@
-version: '3'
+version: '3.3'
 
 services:
-  depth_service:
-    build:
-      context: ./depth_service
-    ports:
-      - "8001:8001"
+  ai_api:
+    container_name: ai_api
+    build: .
+    image: registry.local/ai_api
+    restart: always
     volumes:
-      - ./depth_service:/app
-
-  llm_service:
-    build:
-      context: ./llm_service
+      - .:/code
     ports:
-      - "8002:8002"
-    volumes:
-      - ./llm_service:/app
+      - 8001:8001
