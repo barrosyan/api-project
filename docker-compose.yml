@@ -8,7 +8,6 @@ services:
       - "8001:8001"
     volumes:
       - ./depth_service:/app
-    command: python manage.py runserver 0.0.0.0:8001
 
   llm_service:
     build:
@@ -17,4 +16,3 @@ services:
       - "8002:8002"
     volumes:
       - ./llm_service:/app
-    command: python manage.py runserver 0.0.0.0:8002
