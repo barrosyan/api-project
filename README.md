@@ -1,6 +1,5 @@
-# Vitrus
 
-This repository contains the source code of a Django application called Vitrus, which consists of two services:
+This repository contains the source code of a Django application called API-project, which consists of two services:
 
 1. **depth_service**: A service that takes an image as input and returns its estimated depth.
 2. **llm_service**: A service that utilizes a Language Model (LLM) to answer questions based on a PDF document provided by the user.
@@ -14,13 +13,13 @@ Make sure you have Docker and Docker Compose installed on your machine before st
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-user/vitrus.git
+    git clone https://github.com/your-user/api-project.git
     ```
 
 2. Navigate to the cloned directory:
 
     ```bash
-    cd vitrus
+    cd api
     ```
 
 3. Run Docker Compose to build and start the services:
