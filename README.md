@@ -19,7 +19,7 @@ Make sure you have Docker and Docker Compose installed on your machine before st
 2. Navigate to the cloned directory:
 
     ```bash
-    cd api
+    cd api-project
     ```
 
 3. Run Docker Compose to build and start the services:
